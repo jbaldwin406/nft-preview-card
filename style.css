@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&display=swap');
+
+html {
+    background-color: #0D192C;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D192C;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    width: 350px;
+    height: 596px;
+    background-color: #15263F;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 302px;
+    height: 302px;
+    margin: 24px;
+    position: relative;
+}
+
+.main-image {
+    border-radius: 8px;
+    width: 302px;
+    height: 302px;
+}
+
+.overlay {
+    width: 302px;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 255, 251, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.card-image:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-about {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.card-about h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.card-about h3:hover {
+    color:#00FFFB;
+    cursor: pointer;
+}
+
+.card-about p {
+    color: #8BACD9;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.card-details {
+    width: 302px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.5px;
+}
+
+.price p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00FFFB;
+}
+
+.days-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.5px;
+}
+
+.days-left img {
+    width: 16px;
+    height: 16px;
+}
+
+.days-left p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8BACD9;
+}
+
+.divider {
+    width: 302px;
+    background-color: #2E405A;
+    border: none;
+    height: 1px;
+}
+
+.card-bottom {
+    width: 302px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+}
+
+.creator img {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.creator p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8BACD9;
+}
+
+.creator .name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+}
+
+.creator .name:hover {
+    color: #00FFFB;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 24px;
+    color: #8BACD9;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        max-width: 327px;
+        max-height: 543px;
+    }
+
+    .card-image {
+        max-width: 278px;
+        max-height: 278px;
+    }
+
+    .main-image {
+        max-width: 278px;
+        max-height: 278px;
+    }
+
+    .overlay {
+        max-height: 278px;
+        max-height: 278px;
+    }
+
+    .card-details {
+        max-width: 278px;
+        max-height: 19px;
+    }
+
+    .price p {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+        color: #00FFFB;
+    }
+
+    .days-left p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        color: #8BACD9;
+    }
+
+    .divider {
+        max-width: 278px;
+    }
+
+    .card-bottom {
+        max-width: 278px;
+    }
+}
